@@ -71,9 +71,15 @@ REMOTE_IS_SSH = $(shell git config --get remote.origin.url | grep "git@github.co
 
 sancus-%:
 ifeq ($(REMOTE_IS_SSH), 1)
-	git clone https://github.com/sancus-pma/$@.git
+	git clone https://github.com/sancus-pma/sancus-support.git
+	git clone https://github.com/sancus-pma/sancus-compiler.git
+	git clone https://github.com/S3rg7o/sancus-core.git
+	git clone https://github.com/S3rg7o/sancus-examples.git	
 else
-	git clone git@github.com:sancus-pma/$@.git
+	git clone git@github.com:sancus-pma/sancus-support.git
+	git clone git@github.com:sancus-pma/sancus-compiler.git
+	git clone git@github.com:S3rg7o/sancus-core.git
+	git clone git@github.com:S3rg7o/sancus-examples.git	
 endif
 
 %-update: sancus-%
