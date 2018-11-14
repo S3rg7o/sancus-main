@@ -73,13 +73,13 @@ sancus-%:
 ifeq ($(REMOTE_IS_SSH), 1)
 	git clone https://github.com/sancus-pma/sancus-support.git
 	git clone https://github.com/sancus-pma/sancus-compiler.git
-	git clone https://github.com/S3rg7o/sancus-core.git
-	git clone https://github.com/S3rg7o/sancus-examples.git	
+	git clone https://github.com/S3rg7o/sancus-core.git     # Install Sergio's custom Sancus core - DMA support
+	git clone https://github.com/S3rg7o/sancus-examples.git	# Install Sergio's custom Sancus core - DMA support
 else
 	git clone git@github.com:sancus-pma/sancus-support.git
 	git clone git@github.com:sancus-pma/sancus-compiler.git
-	git clone git@github.com:S3rg7o/sancus-core.git
-	git clone git@github.com:S3rg7o/sancus-examples.git	
+	git clone git@github.com:S3rg7o/sancus-core.git     # Install Sergio's custom Sancus core - DMA support
+	git clone git@github.com:S3rg7o/sancus-examples.git # Install Sergio's custom Sancus core - DMA support
 endif
 
 %-update: sancus-%
