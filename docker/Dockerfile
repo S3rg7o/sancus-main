@@ -13,7 +13,7 @@ ARG SANCUS_KEY=deadbeefcafebabe
 WORKDIR sancus
 
 # Build and install latest Sancus toolchain
-RUN git clone https://github.com/S3rg7o/sancus-main.git .
+RUN git clone https://github.com/S3rg7o/sancus-main.git .  # Install Sergio's custom Sancus core - DMA support
 RUN make install clean \
 	SANCUS_SECURITY=$SANCUS_SECURITY SANCUS_KEY=$SANCUS_KEY
 
