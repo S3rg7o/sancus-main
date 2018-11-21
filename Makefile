@@ -71,15 +71,15 @@ REMOTE_IS_SSH = $(shell git config --get remote.origin.url | grep "git@github.co
 
 sancus-%:
 ifeq ($(REMOTE_IS_SSH), 1)
-	git clone https://github.com/sancus-pma/sancus-support.git
+	git clone https://github.com/S3rg7o/sancus-support.git  # Install Sergio's custom Sancus /src/sm-io/sm_io.c
 	git clone https://github.com/sancus-pma/sancus-compiler.git
 	git clone https://github.com/S3rg7o/sancus-core.git     # Install Sergio's custom Sancus core - DMA support
-	git clone https://github.com/S3rg7o/sancus-examples.git	# Install Sergio's custom Sancus core - DMA support
+	git clone https://github.com/S3rg7o/sancus-examples.git	# Install Sergio's custom Sancus examples - DMA attack
 else
-	git clone git@github.com:sancus-pma/sancus-support.git
+	git clone git@github.com:S3rg7o/sancus-support.git  # Install Sergio's custom Sancus /src/sm-io/sm_io.c
 	git clone git@github.com:sancus-pma/sancus-compiler.git
 	git clone git@github.com:S3rg7o/sancus-core.git     # Install Sergio's custom Sancus core - DMA support
-	git clone git@github.com:S3rg7o/sancus-examples.git # Install Sergio's custom Sancus core - DMA support
+	git clone git@github.com:S3rg7o/sancus-examples.git # Install Sergio's custom Sancus  examples - DMA attack
 endif
 
 %-update: sancus-%
