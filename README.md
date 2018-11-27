@@ -44,10 +44,7 @@ From **msp430-elf-gcc** we need the latest `binutils` for the MSP430. As for Cla
 ## Building Instructions:
 
 ```bash
-$ git clone git@github.com:S3rg7o/sancus-support.git  # Install Sergio's custom Sancus /src/sm-io/sm_io.c
-$ git clone git@github.com:sancus-pma/sancus-compiler.git
-$ git clone git@github.com:S3rg7o/sancus-core.git     # Install Sergio's custom Sancus core with DMA support
-$ git clone git@github.com:S3rg7o/sancus-examples.git # Install Sergio's custom Sancus examples for DMA attack
+$ git clone git@github.com:S3rg7o/sancus-main.git  # Install Sergio's custom Sancus
 $ cd sancus-main
 
 # 1. Install prerequisites
